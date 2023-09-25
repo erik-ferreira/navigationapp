@@ -1,15 +1,12 @@
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { Feather } from "@expo/vector-icons"
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 
 import { New } from "../pages/New"
 import { Feed } from "../pages/Feed"
-import { Profile } from "../pages/Profile"
 
 const { Navigator, Screen } = createBottomTabNavigator()
 
-interface TabRoutesProps {}
-
-export function TabRoutes({ ...rest }: TabRoutesProps) {
+export function TabRoutes() {
   return (
     <Navigator screenOptions={{ headerShown: false }}>
       <Screen
